@@ -270,85 +270,62 @@
  *
  */
 
-
-
 package Day7;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Stack;
+
 public class CollectionDemo {
 
-/*	public static void main(String[] args) {
-		
-		
-		ArrayList al = new ArrayList();
-		al.add("A");
-		al.add(null);
-		al.add("B");
-		al.add("A");
-		al.add(null);
-		al.add(10);
-		System.out.println(al);
-		
-		al.remove(2);
-		al.remove("A");
-		System.out.println(al);
-		
-		al.add(1, "C");
-		System.out.println(al);
-		ArrayList<String> al1 = new ArrayList();
-		al1.add("X");
-		al1.add("Y");
-	
-		/*
-		 * 
-		 * foreach
-		 * for
-		 * Iterator object
-		 * ListIterator
-		 * different ways to iterator in a collection
-		 * Enumeration Interface - legacy class - Vector, stack & HashTable
-		 * Enum - class -define constants
-		 * 
-		 
-	
-		for(String str: al1) {
-			System.out.print(str+ "");
-		}
-		
-		//Iterator
-		Iterator itr = al1.iterator();
-		
-		while(itr.equals(itr.hasNext()){
-			System.out.print(itr.next() + " ");
-		}
-		
-	}
+	/*
+	 * public static void main(String[] args) {
+	 * 
+	 * 
+	 * ArrayList al = new ArrayList(); al.add("A"); al.add(null); al.add("B");
+	 * al.add("A"); al.add(null); al.add(10); System.out.println(al);
+	 * 
+	 * al.remove(2); al.remove("A"); System.out.println(al);
+	 * 
+	 * al.add(1, "C"); System.out.println(al); ArrayList<String> al1 = new
+	 * ArrayList(); al1.add("X"); al1.add("Y");
+	 * 
+	 * /*
+	 * 
+	 * foreach for Iterator object ListIterator different ways to iterator in a
+	 * collection Enumeration Interface - legacy class - Vector, stack & HashTable
+	 * Enum - class -define constants
+	 * 
+	 * 
+	 * 
+	 * for(String str: al1) { System.out.print(str+ ""); }
+	 * 
+	 * //Iterator Iterator itr = al1.iterator();
+	 * 
+	 * while(itr.equals(itr.hasNext()){ System.out.print(itr.next() + " "); }
+	 * 
+	 * }
+	 * 
+	 * 
+	 * 
+	 * 
+	 * public static void main(String[] args) {
+	 * 
+	 * LinkedList l1 = new LinkedList(); l1.add("A"); l1.add("A"); l1.add("A");
+	 * l1.add("A");
+	 */
 
-
-
-	
-public static void main(String[] args) {
-		
-		LinkedList l1 = new LinkedList();
-		l1.add("A");
-		l1.add("A");
-		l1.add("A");
-		l1.add("A");
-*/
-	
 	public static void main(String[] args) {
 		Stack s = new Stack();
-		
+
 		s.push("A");
-		s.push("A");//3
-		s.push("D");//2
-		s.push(null);//1
+		s.push("A");// 3
+		s.push("D");// 2
+		s.push(null);// 1
 		System.out.println(s);
 		System.out.println(s.peek());
 		System.out.println(s.search("A"));
-		
-}
+
+	}
 }

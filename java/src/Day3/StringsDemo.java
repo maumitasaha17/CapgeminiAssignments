@@ -1,4 +1,5 @@
 package Day3;
+
 /*string - sequence of characters using double qoutes
  * immutable
  * 

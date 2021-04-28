@@ -30,20 +30,15 @@ package Day5;
  * 
  */
 
-
-
-
 public class EncapsulationDemo {
 
 	public static void main(String[] args) {
 		Student std = new Student(101, "ram", 15);
-		
+
 		System.out.println(std.getRollNo());
 		std.setRollNo(102);
 		System.out.println(std.getRollNo());
-		
-		
-		
+
 	}
 
 }

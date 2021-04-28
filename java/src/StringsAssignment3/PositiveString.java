@@ -20,12 +20,12 @@ public class PositiveString {
 		for (int i = 0; i < size; i++) {
 			chArray[i] = str.charAt(i);
 		}
-		
+
 		Arrays.sort(chArray);
 		for (int i = 0; i < size; i++) {
-		if (chArray[i] != str.charAt(i)) {
+			if (chArray[i] != str.charAt(i)) {
 
-			return false;
+				return false;
 			}
 		}
 		return true;

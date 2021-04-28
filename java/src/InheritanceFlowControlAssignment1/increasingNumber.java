@@ -1,4 +1,4 @@
-package FlowControlAssignment1;
+package InheritanceFlowControlAssignment1;
 
 public class increasingNumber {
 

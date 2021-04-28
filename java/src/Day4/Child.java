@@ -1,4 +1,5 @@
 package Day4;
+
 /*with inhertance
 public class Child {
 
@@ -9,20 +10,18 @@ public class Child {
 		p.m1();
 	*/
 //Without Inheretance
-public class Child extends Parent{
-	
-	static char c = 'a'{
-			
-			
-			
+public class Child extends Parent {
+
+	static char c = 'a'
+	{
+
 	}
+
 	public static void main(String[] args) {
 		System.out.println(x);
 		System.out.println(i);
 		m1();
-	
-	
-	
+
 	}
 
 }

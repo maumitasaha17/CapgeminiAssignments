@@ -13,24 +13,25 @@ import java.util.List;
  */
 public interface IProduct {
 
-	int x = 100; //public, static, final
-	
-	
-	
+	int x = 100; // public, static, final
+
 	Product getProduct();
+
 	Product updateProduct();
+
 	Product deleteProduct();
+
 	List[] viewAllProduct();
+
 	Product viewProductByName();
 
-	//default & static method
+	// default & static method
 	default void m1() {
 		System.out.println("IProduct - m1 method");
 	}
+
 	default void m2() {
 		System.out.println("IProduct - m2 method");
 	}
-
-
 
 }

@@ -4,7 +4,7 @@ public class ValidAge {
 
 	static void validate(int age) throws InvalidAgeException {
 		if (age < 15)
-			
+
 			throw new InvalidAgeException("Invalid Age");
 		else
 			System.out.println("Valid Age");

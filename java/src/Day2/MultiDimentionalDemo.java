@@ -23,26 +23,14 @@ public class MultiDimentionalDemo {
 		
 	}
 }
-		
-		
-		
-		
-		/*int[][] intArr = new int[2][3];
-		int[][] intArr1 = {{1,2,3},{4,5,6},{7,8,9}}; //3x3
 
-		for(int i = 0; i<intArr1.length; i++) {; //{1,2,3}
-			for(int j = 0; j<intArr1[i].length; j++) {
-				System.out.println(intArr1[i][j] +" ");
-				//intArr1[0][0] - 1
-				//intArr1[0][1] - 2
-				//intArr1[0][2] - 3
-				//intArr1[1][0] - 4
-				//intArr1[1][1] - 5
-				//intArr1[1][2] - 6
-				//intArr1[2][0] - 7
-				//intArr1[2][1] - 8
-				//intArr1[2][2] - 9
-			}
-		}
-	}
-}*/
+/*
+ * int[][] intArr = new int[2][3]; int[][] intArr1 = {{1,2,3},{4,5,6},{7,8,9}};
+ * //3x3
+ * 
+ * for(int i = 0; i<intArr1.length; i++) {; //{1,2,3} for(int j = 0;
+ * j<intArr1[i].length; j++) { System.out.println(intArr1[i][j] +" ");
+ * //intArr1[0][0] - 1 //intArr1[0][1] - 2 //intArr1[0][2] - 3 //intArr1[1][0] -
+ * 4 //intArr1[1][1] - 5 //intArr1[1][2] - 6 //intArr1[2][0] - 7 //intArr1[2][1]
+ * - 8 //intArr1[2][2] - 9 } } } }
+ */

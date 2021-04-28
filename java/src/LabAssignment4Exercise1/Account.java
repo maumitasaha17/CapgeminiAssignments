@@ -25,7 +25,7 @@ public class Account extends Person {
 		balance = balance + amount;
 	}
 
-	public boolean withdraw(double amount) { //overiding method
+	public boolean withdraw(double amount) { // overiding method
 		if (balance > amount) {
 			balance = balance - amount;
 			return true;

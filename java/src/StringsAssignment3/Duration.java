@@ -10,8 +10,8 @@ public class Duration {
 		LocalDate now = LocalDate.now();
 
 		Period diff = Period.between(pdate, now);
-
-			System.out.printf("Difference = %d years, %d months and %d days old\n\n", diff.getYears(), diff.getMonths(),
+		// %d is decimal integer
+		System.out.printf("Difference = %d years, %d months and %d days old\n\n", diff.getYears(), diff.getMonths(),
 				diff.getDays());
 
 	}

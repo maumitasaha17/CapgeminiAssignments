@@ -21,7 +21,6 @@ public class RunDate {
 		
 		System.out.println("The date is " +dt+ "\n" +baseStr);
 		
+		}
 	}
-	}
-
 }

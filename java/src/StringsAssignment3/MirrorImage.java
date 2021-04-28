@@ -16,9 +16,9 @@ public class MirrorImage {
 	public static void main(String[] args) {
 		MirrorImage m = new MirrorImage();
 		Scanner s = new Scanner(System.in);
-			System.out.println("Enter a string = ");
+		System.out.println("Enter a string = ");
 		String str = s.next();
-			System.out.println(m.getImage(str));
+		System.out.println(m.getImage(str));
 
 	}
 

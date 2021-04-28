@@ -1,8 +1,12 @@
 package Day9;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
 
 /*
@@ -21,10 +25,10 @@ import java.io.IOException;
  * FileWriter -write
  * 
  * Line
- * BufferedInputStream - Reaf
+ * BufferedInputStream - Read
  * BufferedOutputStream - Write
- * BufferedReader - read line by line
- * BufferedWriter - write line by line
+ * BufferedReader - read line by line //readline()
+ * BufferedWriter - write line by line // writeline()
  * 
  * 
  * 
@@ -34,25 +38,31 @@ import java.io.IOException;
 public class FileDemo {
 
 	public static void main(String[] args) throws IOException {
-		try {
-			FileInputStream fis = new FileInputStream("source.txt"); // byte stram channel
+		FileInputStream fis = new FileInputStream("C:\\Users\\MAUMITA\\OneDrive\\wiki.txt"); // byte stream channel
+		FileOutputStream fos = new FileOutputStream("C:\\Users\\MAUMITA\\OneDrive\\wiki.txt");
+
+		BufferedInputStream bis = new BufferedInputStream(fis);
+		BufferedOutputStream bos = new BufferedOutputStream(fos);
+
+		int num;
+		while ((num = bis.read()) != -1) {
+			System.out.println((char) num);
+
+			bos.write(num);
 		}
-		catch (FileNotFoundException e) {
-			e.printStackTrace();
-			
+		if (bos != null) {
+			bos.close();
+
 		}
-		try {
-			FileOutputStream fos = new FileOutputStream("target.txt");
+		if (bis != null) {
+			bis.close();
 		}
-		catch(FileNotFoundException e) {
-			e.printStackTrace();
-			
+		if (fos != null) {
+			fos.close();
 		}
-	int num;
-	while(( num = fis.read())!=-1) {
-		fos.write(num);
-	}
-			fis.read();
-	
+		if (fis != null) {
+			fis.close();
+		}
+
 	}
 }

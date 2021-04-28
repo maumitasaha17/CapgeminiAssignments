@@ -7,19 +7,18 @@ import java.util.List;
 public class secondSmallestInArray {
 
 	public static int getSecondSmallest(Integer[] a, int total) {
-		
-		List<Integer>list=Arrays.asList(a);
+
+		List<Integer> list = Arrays.asList(a);
 		Collections.sort(list);
 		int element = list.get(1);
 		return element;
 	}
-	
-	
+
 	public static void main(String[] args) {
-		Integer a[] = {55,10,100,1,99,20,25};
-		Integer b[]={44,66,99,77,33,22,55}; 
-		System.out.println("Second Smallest Number is "+getSecondSmallest(a,7));
-		System.out.println("Second Smallest Number is "+getSecondSmallest(b,7));
+		Integer a[] = { 55, 10, 100, 1, 99, 20, 25 };
+		Integer b[] = { 44, 66, 99, 77, 33, 22, 55 };
+		System.out.println("Second Smallest Number is " + getSecondSmallest(a, 7)); // length of the list is 7
+		System.out.println("Second Smallest Number is " + getSecondSmallest(b, 7));
 	}
 
 }

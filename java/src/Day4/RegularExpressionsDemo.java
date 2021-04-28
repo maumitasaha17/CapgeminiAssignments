@@ -68,80 +68,66 @@ package Day4;
  * 
  */
 
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class RegularExpressionsDemo {
 
-	
 	public static void main(String[] args) {
-	/*
-		Pattern pattern = Pattern.compile("[0-4][0-9]"); //define pattern
-		Matcher matcher = pattern.matcher("abcxyz43lmo"); //define input
-		
-		if(matcher.matches()) {
-			System.out.println(matcher.group()); //group method will return the strings
-		} else {
-			System.out.println("Matcher not found in given input");
-		}
-		if(matcher.find()) {
-			System.out.println(matcher.group()); 
-		} else {
-			System.out.println("Matcher not found in given input");
-		}*/
-	    
-		//test@gmail.com
+		/*
+		 * Pattern pattern = Pattern.compile("[0-4][0-9]"); //define pattern Matcher
+		 * matcher = pattern.matcher("abcxyz43lmo"); //define input
+		 * 
+		 * if(matcher.matches()) { System.out.println(matcher.group()); //group method
+		 * will return the strings } else {
+		 * System.out.println("Matcher not found in given input"); } if(matcher.find())
+		 * { System.out.println(matcher.group()); } else {
+		 * System.out.println("Matcher not found in given input"); }
+		 */
+
+		// test@gmail.com
 		Pattern pattern1 = Pattern.compile("\\w{4}@\\w{5}\\.\\w{3}");
-		Pattern pattern2 = Pattern.compile("[a-zA-Z0-9]+@[a-zA-Z0-9]+\\.com"); //define pattern
-		
-		Matcher matcher1 = pattern2.matcher("test123@gmail.com"); //define input
-	
-		/*if(matcher1.matches()) {
-			System.out.println(matcher1.group()); //group method will return the strings
-		} else {
-			System.out.println("Matcher not found in given input");
-		}*/
-		
-		if(matcher1.find()) {
-			System.out.println(matcher1.group()); 
-		} else {
-			System.out.println("Matcher not found in given input");
-		}
-/*	
-	1. write pattern to match mr. and mrs. ?
-		[mM]rs?\\.
-		
-	2. 020-26231407
-		\d{8}-\d{8},
-		[0-2]{3}-[0-9]{8},
-		
-		
-		
-	3. +91 20 2623 1407 (International call rates applicable)
-		"\\+"\s91\s\d{2}\s\d{4}\s\d{4}\s(International call rates applicable)"
-		
-	4. 613 701 98270 (toll number) #
-		\d{3}\s\d{3}\s\d{5}.*
-		
-		Pattern pattern4 = Pattern.compile("(\\d{3})\\s(\\d{3})\\s(\\d{5}).*");
-		Matcher matcher4 = pattern4.matcher("613 701 98270 (Toll Number) #"); 
-		if(matcher4.matches()) {
-			System.out.println(matcher4.group()); 
-			System.out.println(matcher4.group(1)); //613 for individual set of group
-			System.out.println(matcher4.group(2)); //701
-			System.out.println(matcher4.group(3)); //98270
+		Pattern pattern2 = Pattern.compile("[a-zA-Z0-9]+@[a-zA-Z0-9]+\\.com"); // define pattern
+
+		Matcher matcher1 = pattern2.matcher("test123@gmail.com"); // define input
+
+		/*
+		 * if(matcher1.matches()) { System.out.println(matcher1.group()); //group method
+		 * will return the strings } else {
+		 * System.out.println("Matcher not found in given input"); }
+		 */
+
+		if (matcher1.find()) {
+			System.out.println(matcher1.group());
 		} else {
 			System.out.println("Matcher not found in given input");
 		}
-	
-	5. MTNL / BSNL
-	 	MTNL\/BSNL
-	
-*
-*
-*
-*
-*/
+		/*
+		 * 1. write pattern to match mr. and mrs. ? [mM]rs?\\.
+		 * 
+		 * 2. 020-26231407 \d{8}-\d{8}, [0-2]{3}-[0-9]{8},
+		 * 
+		 * 
+		 * 
+		 * 3. +91 20 2623 1407 (International call rates applicable)
+		 * "\\+"\s91\s\d{2}\s\d{4}\s\d{4}\s(International call rates applicable)"
+		 * 
+		 * 4. 613 701 98270 (toll number) # \d{3}\s\d{3}\s\d{5}.*
+		 * 
+		 * Pattern pattern4 = Pattern.compile("(\\d{3})\\s(\\d{3})\\s(\\d{5}).*");
+		 * Matcher matcher4 = pattern4.matcher("613 701 98270 (Toll Number) #");
+		 * if(matcher4.matches()) { System.out.println(matcher4.group());
+		 * System.out.println(matcher4.group(1)); //613 for individual set of group
+		 * System.out.println(matcher4.group(2)); //701
+		 * System.out.println(matcher4.group(3)); //98270 } else {
+		 * System.out.println("Matcher not found in given input"); }
+		 * 
+		 * 5. MTNL / BSNL MTNL\/BSNL
+		 *
+		 *
+		 *
+		 *
+		 * 
+		 */
 	}
 }

@@ -5,27 +5,26 @@ import java.util.Set;
 
 public class Students {
 
-	
-	public HashMap<String, String> getStudent(HashMap<String, Integer>s){
+	// creating hashmap
+	public HashMap<String, String> getStudent(HashMap<String, Integer> s) {
 		HashMap<String, String> medal = new HashMap<>();
 		Set<String> set = s.keySet();
-		for(String se:set) {
+		// set the values using if elseif statement
+		for (String se : set) {
 			Integer marks = s.get(se);
-			if(marks>=90) {
+			if (marks >= 90) {
 				medal.put(se, "Gold");
-			}
-			else if(marks>=80) {
+			} else if (marks >= 80) {
 				medal.put(se, "Silver");
-			}
-			else if(marks>=70) {
+			} else if (marks >= 70) {
 				medal.put(se, "Bronze");
 			}
-			
-			
+
 		}
-	return medal;
-	
+		return medal;
+
 	}
+
 	public static void main(String[] args) {
 		HashMap<String, Integer> s = new HashMap<>();
 		Students std = new Students();

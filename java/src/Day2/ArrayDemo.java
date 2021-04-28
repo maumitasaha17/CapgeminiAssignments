@@ -70,42 +70,36 @@ public class ArrayDemo {
 				
 				}
 		}
-		/*int[] x = new int[5];
-		 x[0]=10;
-		 x[1]=20;
-		 x[2]=30 */
-		
-		
-		//Initialization
-		empArr[0] = emp1;
-		empArr[1] = emp2;
-		empArr[2] = emp3;
-		
-		
-		//Iterating through an array
-		for(Employee emp:empArr) {
-			//System.out.println(emp);
-			
-			if(emp instanceof Employee) {
-				System.out.println(emp.empId+" ");
-				System.out.println(emp.empName);
-				System.out.println();
-				// continue; to only get null values comment out 29,30,31 and place continue; after instance of
-			} else { //for null strings 
-				System.out.println(emp); 
-			}
+	/*
+	 * int[] x = new int[5]; x[0]=10; x[1]=20; x[2]=30
+	 */
+
+	// Initialization
+	empArr[0]=emp1;empArr[1]=emp2;empArr[2]=emp3;
+
+	// Iterating through an array
+	for(
+
+	Employee emp:empArr)
+	{
+		// System.out.println(emp);
+
+		if (emp instanceof Employee) {
+			System.out.println(emp.empId + " ");
+			System.out.println(emp.empName);
+			System.out.println();
+			// continue; to only get null values comment out 29,30,31 and place continue;
+			// after instance of
+		} else { // for null strings
+			System.out.println(emp);
 		}
-	
-		/*
-		for(int i = 0; i<empArr.length; i++) {
-			if(empArr[i] instanceof Employee) {
-				continue;
-			} else {
-				System.out.println(i);
-			}
-		}
-		*/
-		
 	}
-		
+
+	/*
+	 * for(int i = 0; i<empArr.length; i++) { if(empArr[i] instanceof Employee) {
+	 * continue; } else { System.out.println(i); } }
+	 */
+
+}
+
 }

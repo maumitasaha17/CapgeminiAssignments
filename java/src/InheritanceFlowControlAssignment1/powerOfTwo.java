@@ -1,10 +1,10 @@
-package FlowControlAssignment1;
+package InheritanceFlowControlAssignment1;
 
 public class powerOfTwo {
 
 	public static void main(String[] args) {
-		
-		System.out.println("The number is the power of two: " +powerOfTwo(6));
+
+		System.out.println("The number is the power of two: " + powerOfTwo(6));
 	}
 
 	public static boolean powerOfTwo(int n) {
